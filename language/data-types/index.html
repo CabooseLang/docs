@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Data Types - Caboose Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Types";
+    var mkdocs_page_input_path = "language/data-types.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/cb.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Caboose Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../user/getting-started/">Getting Started</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Language Reference</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../conditionals-loops/">Conditionals & Loops</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Data Types</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#caboose-data-types">Caboose Data Types</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#booleans">Booleans</a></li>
+        
+            <li><a class="toctree-l4" href="#nil">Nil</a></li>
+        
+            <li><a class="toctree-l4" href="#numbers">Numbers</a></li>
+        
+            <li><a class="toctree-l4" href="#strings">Strings</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../about/license/">License</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Caboose Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Language Reference &raquo;</li>
+        
+      
+    
+    <li>Data Types</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="caboose-data-types">Caboose Data Types</h1>
+<h2 id="booleans">Booleans</h2>
+<p>Booleans consist of <code>true</code> or <code>false</code>, it's as simple as that! It does get a little complicated when <a href="#falsiness">falsiness</a> comes into play, so go read there about how it all works.</p>
+<h3 id="example">Example:</h3>
+<pre><code class="cb">var a = true;
+var b = false;
+
+if (a) {
+    // This code will always run
+} else {
+    // This code never runs
+}
+
+var c = !a; // False
+</code></pre>
+
+<h2 id="nil">Nil</h2>
+<p>Nil is the caboose equivalent of <code>null</code>. Nil is basically a reference to nothing.</p>
+<h3 id="example_1">Example:</h3>
+<pre><code class="cb">var a = nil;
+
+print(a); // Prints out &quot;nil&quot;
+</code></pre>
+
+<h2 id="numbers">Numbers</h2>
+<p>Numbers are a common data type among almost all programming languages. A number in Caboose can either be an integer or a decimal. They are stored in the same data type.</p>
+<h3 id="example_2">Example:</h3>
+<pre><code class="cb">var a = 0.1;
+var b = 1;
+
+print(a + b); // Prints out &quot;1.1&quot;
+</code></pre>
+
+<h2 id="strings">Strings</h2>
+<p>Strings are an essential component of all programs. They allow you to store text as a variable.</p>
+<h3 id="example_3">Example:</h3>
+<pre><code class="cb">var a = &quot;Hello, &quot;;
+var b = &quot;world&quot;;
+
+// Strings can be joined
+var c = a + b;
+
+// When printed, they print out the text that they store.
+print(c); // Prints out &quot;Hello, world&quot;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../about/license/" class="btn btn-neutral float-right" title="License">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../conditionals-loops/" class="btn btn-neutral" title="Conditionals & Loops"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../conditionals-loops/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../about/license/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
