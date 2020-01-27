@@ -1,0 +1,15 @@
+site_name: Caboose Documentation
+nav:
+  - Home: 'index.md'
+  - User Guide:
+    - 'Getting Started': 'user/getting-started.md'
+  - Language Reference:
+    - 'Conditionals & Loops': 'language/conditionals-loops.md'
+    - 'Data Types': 'language/data-types.md'
+  - About:
+    - 'License': 'about/license.md'
+theme:
+  name: readthedocs
+  hljs_style: a_11_y_dark
+  hljs_languages:
+    - cb
